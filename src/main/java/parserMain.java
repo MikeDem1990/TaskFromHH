@@ -41,28 +41,11 @@ public class parserMain {
         finalGrouping();
         print();
 
-//        long finish = System.currentTimeMillis();
-//        long elapsed = finish - timeCode;
-//        System.out.println("Прошло времени, мс: " + elapsed);
+        long finish = System.currentTimeMillis();
+        long elapsed = finish - timeCode;
+        System.out.println("Прошло времени, мс: " + elapsed);
     }
 
-    private static void filterData(String[] values) {
-        if(values.length == 3) {
-            TextEntity multiEntity = new TextEntity(values);
-            if(!uniqStr.contains(multiEntity) && multiEntity.marker()) {
-                uniqStr.add(multiEntity);
-                primaryGrouping(multiEntity);
-            }
-        }
-    }
-
-    private static void primaryGrouping(TextEntity multiEntity) {
-        for (TEntity entity : multiEntity.getMarker()) {
-            ArrayList<TextEntity> v = containers.getOrDefault(entity, new ArrayList<>());
-            v.add(multiEntity);
-            containers.put(entity, v);
-        }
-    }
 
 
     private static void clearGroup(){
