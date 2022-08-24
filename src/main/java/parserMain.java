@@ -41,9 +41,9 @@ public class parserMain {
         finalGrouping();
         print();
 
-        long finish = System.currentTimeMillis();
-        long elapsed = finish - timeCode;
-        System.out.println("Прошло времени, мс: " + elapsed);
+//        long finish = System.currentTimeMillis();
+//        long elapsed = finish - timeCode;
+//        System.out.println("Прошло времени, мс: " + elapsed);
     }
 
 
