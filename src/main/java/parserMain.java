@@ -40,6 +40,10 @@ public class parserMain {
         clearGroup();
         finalGrouping();
         print();
+
+//        long finish = System.currentTimeMillis();
+//        long elapsed = finish - timeCode;
+//        System.out.println("Прошло времени, мс: " + elapsed);
     }
 
     private static void filterData(String[] values) {
